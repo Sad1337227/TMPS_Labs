@@ -27,7 +27,7 @@
 
 
 ## Implementation
-In this laboratory I implemented three design patterns on of them is 'Bridge' here is its implementation:
+In this laboratory I implemented three design patterns on of them is `Bridge` here is its implementation:
 ```
 public interface PresenterInterface {
 
@@ -36,7 +36,7 @@ void StartSimulation(final View mainView, final Model model,
 
 }
 ```
-Another pattern used is 'Facade' I used it in my MVP model, here is implemetnation:
+Another pattern used is `Facade` I used it in my MVP model, here is implemetnation:
 ```
 public MVPFacade() {
     configManager = new ConfigManager();
@@ -51,7 +51,7 @@ public MVPFacade() {
     
   }
 ```
-The last pattern I used is 'Proxy', I used it in Presenter:
+The last pattern I used is `Proxy`, I used it in Presenter:
 ```
 public class PresenterProxy implements PresenterInterface {
   private static Presenter presenter;
