@@ -27,7 +27,7 @@
 
 
 ## Implementation
-In this laboratory work I have 'Singleton' implementaion at the View in MVP model:
+In this laboratory work I have `Singleton` implementaion at the View in MVP model:
 ```
   public static View getInstance() {
     if (instance == null) {
@@ -36,7 +36,7 @@ In this laboratory work I have 'Singleton' implementaion at the View in MVP mode
     return instance;
   }
 ```
-Also I added the 'Factory' to create different types of customers:
+Also I added the `Factory` to create different types of customers:
 ```
 public class CustomerFactory {
   public PoorCustomer createPoorCustomer() { return new PoorCustomer(); }
@@ -44,7 +44,7 @@ public class CustomerFactory {
   public RichCustomer createRichCustomer() { return new RichCustomer(); }
 }
 ```
-The last thing I added is 'Prototype' here is its implemetation, I implemented to class Products Clonable to be able to copy them:
+The last thing I added is `Prototype` here is its implemetation, I implemented to class Products Clonable to be able to copy them:
 ```
   public Object clone() {
     Object clone = null;
