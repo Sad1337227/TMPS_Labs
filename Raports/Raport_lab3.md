@@ -27,3 +27,36 @@
 
 
 ## Implementation
+In this laboratory I implemented three design patterns on of them is 'Bridge' here is its implementation:
+```
+public interface PresenterInterface {
+
+void StartSimulation(final View mainView, final Model model,
+                              final ConfigManager configManager);
+
+}
+```
+Another pattern used is 'Facade' I used it in my MVP model, here is implemetnation:
+```
+public MVPFacade() {
+    configManager = new ConfigManager();
+    try {
+      configManager.Load();
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
+
+    model = new Model(configManager);
+    presenter = new PresenterProxy();
+    
+  }
+```
+The last pattern I used is 'Proxy', I used it in Presenter:
+```
+public class PresenterProxy implements PresenterInterface {
+  private static Presenter presenter;
+
+  public PresenterProxy(){
+    super();
+  }
+```
